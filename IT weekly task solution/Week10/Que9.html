@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sum and Product of Array</title>
+</head>
+<body>
+  <h1>Sum and Product of Array</h1>
+
+  <script>
+    // Function to compute sum and product of an array of integers
+    function computeSumAndProduct(arr) {
+        let sum = 0;
+        let product = 1;
+
+        // Calculate sum and product
+        for (let i = 0; i < arr.length; i++) {
+            sum += arr[i];
+            product *= arr[i];
+        }
+
+        // Return an object containing sum and product
+        return {
+            sum: sum,
+            product: product
+        };
+    }
+
+    // Sample array of integers
+    let numbers = [1, 2, 3, 4, 5];
+
+    // Compute sum and product
+    let result = computeSumAndProduct(numbers);
+
+    // Display the result on the webpage
+    document.write("<p>Array: " + numbers.join(", ") + "</p>");
+    document.write("<p>Sum: " + result.sum + "</p>");
+    document.write("<p>Product: " + result.product + "</p>");
+  </script>
+</body>
+</html>

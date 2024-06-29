@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join Array Elements</title>
+</head>
+<body>
+  <h1>Join Array Elements</h1>
+
+  <script>
+    // Sample array
+    let myColor = ["Red", "Green", "White", "Black"];
+
+    // Using join() method with different separators
+    let output1 = myColor.toString();
+    let output2 = myColor.join();
+    let output3 = myColor.join('+');
+
+    // Displaying results
+    document.write("<p>Using toString(): " + output1 + "</p>");
+    document.write("<p>Using join() with default separator: " + output2 + "</p>");
+    document.write("<p>Using join('+'): " + output3 + "</p>");
+  </script>
+</body>
+</html>

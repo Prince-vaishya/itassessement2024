@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            align-items: center;
+            width: 80%;
+            margin: auto;
+            margin-top: 100px;
+            background-color: aqua;
+            color: #330000;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .con {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .box {
+            border-left: 3px solid #330000;
+            border-right: 3px solid #330000;
+            border-top: 4px solid #330000;
+        }
+
+        header {
+            border-bottom: 2px solid #330000;
+            background-color: #CCAA66;
+            padding: 10px
+        }
+
+        h1 {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        footer {
+            border-top: 2px solid #330000;
+            background-color: #CCAA66;
+            padding: 20px;
+            text-align: center;
+            font-size: 11px;
+        }
+
+        .nav {
+            list-style-type: none;
+        }
+
+        .nav li a {
+            display: block;
+            height: 50px;
+            text-decoration: none;
+        }
+
+        a:link {
+            color: blue;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            background-color: #ada058;
+        }
+
+        table {
+            border-collapse: collapse;
+            height: 100%;
+            width: 100%;
+        }
+
+        .left {
+            background-color: #E8D882;
+            width: 20%;
+            height: 100%;
+            vertical-align: top;
+            padding: 0
+        }
+
+        .right {
+            background-color: #F1E8B0;
+            width: 80%;
+            height: 100%;
+            padding: 45px;
+        }
+
+        img {
+            float: right;
+        }
+
+        main {
+            height: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con box">
+        <header>
+            <h1>Stinky Pete's Pirate Tavern</h1>
+        </header>
+        <table class="con">
+            <tr>
+                <td class="left">
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="grog.html">Grog</a></li>
+                            <li><a href="shanties.html">Shanties</a></li>
+                            <li><a href="becomeaswab.html">Become a swab</a></li>
+                        </ul>
+                    </nav>
+                </td>
+                <td class="right">
+                    <p>Avast maties! Here ye'll be findin' all these delights...</p>
+                    <img src="pirate.png" width="200">
+                    <ul>
+                        <li>Great grog</li>
+                        <li>All the rum you can drink</li>
+                        <li>Good honest pirate fare like weevily biscuits and stewed rat</li>
+                        <li>Wenches and swabs for every taste</li>
+                        <li>Salty seadogs singin' shanties</li>
+                        <li>...</li>
+                    </ul>
+                    <p>Berth 23<br>Nottingham Docks<br>0115 9324567</p>
+                </td>
+            </tr>
+        </table>
+        <footer>
+            <i>Copyright © 2011 Stinky Pete's Pirate Tavern</i>
+            <br>
+            <a href="stinkeypete@arrrr.com" target="_blank">
+                stinkeypete@arrrr.com
+            </a>
+        </footer>
+    </div>
+</body>
+
+</html>

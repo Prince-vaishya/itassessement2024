@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Add Items to Array and Display</title>
+</head>
+<body>
+  <h1>Add Items to Array and Display</h1>
+
+  <label for="item">Add Item:</label>
+  <input type="text" id="itemInput">
+  <button onclick="addItem()">Add Item</button><br><br>
+
+  <ul id="itemList"></ul>
+
+  <script>
+    // Initialize an empty array
+    let items = [];
+
+    // Function to add item to the array and display items
+    function addItem() {
+        // Get input value
+        let newItem = document.getElementById("itemInput").value.trim();
+
+        // Add item to array if not empty
+        if (newItem !== '') {
+            items.push(newItem);
+            displayItems();
+            // Clear input field after adding
+            document.getElementById("itemInput").value = '';
+        }
+    }
+
+    // Function to display items in the array
+    function displayItems() {
+        let itemList = document.getElementById("itemList");
+        // Clear existing list items
+        itemList.innerHTML = '';
+        
+        // Iterate through array and display each item
+        items.forEach(function(item) {
+            let li = document.createElement('li');
+            li.textContent = item;
+            itemList.appendChild(li);
+        });
+    }
+  </script>
+</body>
+</html>

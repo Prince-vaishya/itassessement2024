@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4</title>
+</head>
+<body>
+    <script>
+        /* 4. WAP to get number input with prompt dialog dox and show the Day using switch case
+            ⦁	For Case 1, show Sunday
+            ⦁	For Case 2, show Monday
+            ⦁	For Case 3, show Tuesday
+            ⦁	For Case 4, show Wednesday
+            ⦁	For Case 5, show Thursday
+            ⦁	For Case 6, show Friday
+            ⦁	For Case 7, show Saturday
+            ⦁	For default, show Invalid
+            */
+        function program()
+        {
+            number = prompt("Enter a number (1-7): ");
+            let day;
+
+            switch (number) {
+                case "1":
+                    day = "Sunday <br><br>";
+                    break;
+                case "2":
+                    day = "Monday <br><br>";
+                    break;
+                case "3":
+                    day = "Tuesday <br><br>";
+                    break;
+                case "4":
+                    day = "Wednesday <br><br>";
+                    break;
+                case "5":
+                    day = "Thursday <br><br>";
+                    break;
+                case "6":
+                    day = "Friday <br><br>";
+                    break;
+                case "7":
+                    day = "Saturday <br><br>";
+                    break;
+                default:
+                    day = "Invalid <br><br>";
+                    break;
+                }
+            document.write("Day: ", day, "<br><br>");
+        }
+        program();
+    </script>
+</body>
+</html>

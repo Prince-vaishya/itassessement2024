@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+</head>
+<body>
+    <script>
+        /* 3. WAP to show the use if …. Else if …. else for following conditions:
+            ⦁	For marks > = 80 and marks <=100, show Distinction
+            ⦁	For marks >=60 and marks < 80, show First Division
+            ⦁	For marks >=50 and marks < 60, show Second Division
+            ⦁	For marks >=40 and marks <50, show Third Division
+            ⦁	For marks < 40, show Fail*/
+        function program()
+        {
+            let marks = 20;
+            marks = prompt("Enter your marks: ");
+            if (marks >= 80 && marks <= 100) {
+                document.write("Distinction <br><br>");
+            } else if (marks >= 60 && marks < 80) {
+                document.write("First Division <br><br>");
+            } else if (marks >= 50 && marks < 60) {
+                document.write("Second Division <br><br>");
+            } else if (marks >= 40 && marks < 50) {
+                document.write("Third Division <br><br>");
+            } else {
+                document.write("Fail <br><br>");
+            }
+        }
+        program();
+    </script>
+</body>
+</html>
